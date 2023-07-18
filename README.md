@@ -8,6 +8,6 @@
 
 IP 51.250.12.167
 
-Frontend https://simon.movies.nomoreparties.sbs
+Frontend https://simon.movies.nomoredomains.xyz/
 
-Backend https://api.simon.movies.nomoreparties.sbs
+Backend https://api.simon.movies.nomoredomains.xyz/
