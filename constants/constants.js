@@ -1,5 +1,5 @@
 const {
-  NODE_ENV, JWT_SECRET = 'dev-secret', MONGODB_URL = 'mongodb://localhost:27017/dbmovies', PORT = 3000,
+  NODE_ENV, JWT_SECRET = 'dev-secret', MONGODB_URL = 'mongodb://localhost:27017/dbmovies', PORT = 3001,
 } = process.env;
 
 const CREATED_CODE = 201;
@@ -16,6 +16,7 @@ const corsOptions = {
   origin: [
     'http://localhost:3000',
     'http://localhost:3001',
+    'https://simon.movies.nomoredomains.xyz',
   ],
   credentials: true,
   methods: ['GET', 'PUT', 'POST', 'DELETE', 'PATCH'],
