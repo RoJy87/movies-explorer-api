@@ -10,7 +10,9 @@ module.exports.getMovies = async (req, res, next) => {
     const { _id } = req.user;
     movies = movies.filter((movie) => movie.owner.toString() === _id);
     res.send(movies);
-  } catch (err) { next(err); }
+  } catch (err) {
+    next(err);
+  }
 };
 
 module.exports.createMovie = async (req, res, next) => {
@@ -47,7 +49,9 @@ module.exports.createMovie = async (req, res, next) => {
   } catch (err) {
     if (err.name === 'ValidationError') {
       next(new ValidationError());
-    } else { next(err); }
+    } else {
+      next(err);
+    }
   }
 };
 
@@ -60,5 +64,7 @@ module.exports.deleteMovie = async (req, res, next) => {
     }
     movie = await Movie.findByIdAndRemove(req.params.movieId);
     res.send(movie);
-  } catch (err) { next(err); }
+  } catch (err) {
+    next(err);
+  }
 };

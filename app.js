@@ -11,12 +11,9 @@ const router = require('./routes');
 const limiter = require('./middlewares/limiter');
 const { MONGODB_URL, PORT, corsOptions } = require('./constants/constants');
 
-mongoose.connect(
-  MONGODB_URL,
-  {
-    useNewUrlParser: true,
-  },
-);
+mongoose.connect(MONGODB_URL, {
+  useNewUrlParser: true,
+});
 
 const app = express();
 

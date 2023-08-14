@@ -57,8 +57,12 @@ movieSchema.statics.findMovieById = async function findMovie(movieId, next) {
   let movie;
   try {
     movie = await this.findById(movieId);
-    if (!movie) { throw new NotFoundError('Фильма нет в базе'); }
-  } catch (err) { next(err); }
+    if (!movie) {
+      throw new NotFoundError('Фильма нет в базе');
+    }
+  } catch (err) {
+    next(err);
+  }
   return movie;
 };
 

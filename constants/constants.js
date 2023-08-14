@@ -9,7 +9,7 @@ const FORBIDDEN_ERROR_CODE = 403;
 const NOT_FOUND_ERROR_CODE = 404;
 const CREATE_USER_ERROR_CODE = 409;
 const SERVER_ERROR_CODE = 500;
-const DUBLICATE_ERROR_CODE = 409;
+const DUBLICATE_ERROR_CODE = 11000;
 const PATERN_URL = /^(https?:\/\/)(www\.)?[a-zA-Z0-9][\w\W]+\.[a-zA-Z]{2,}([./]?)([\w][\w\W]*)?#?$/;
 
 const corsOptions = {
