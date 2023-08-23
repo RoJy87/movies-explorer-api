@@ -6,7 +6,7 @@
 
 ## Ссылки на проект
 
-IP 51.250.12.167
+IP 158.160.54.118
 
 Frontend https://simon.movies.nomoredomains.xyz/
 
